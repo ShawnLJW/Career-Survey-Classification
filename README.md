@@ -1,13 +1,13 @@
 # Free-response Survey Processing
 
- - Tool to find out where students aspire to progress to for post-secondary education.
- - Processed data from open-ended survey questions, with **100+ responses** each year.
- - Used natural language processing to find keywords in responses, and mark them with suitable tag.
+ - Processed responses from open-ended survey questions to find out where students aspire to progress to for post-secondary education.
+ - Used natural language processing to clean responses and tag with categories.
+ - Allowed for analysis on a large scale. **1000+ responses over 4 years**
 
 ## Resources Used
 
 **Programming Language:** Python 3.9
-**Packages:** pandas, matplotlib, Natural Language Toolkit (nltk)
+**Packages:** numpy, pandas, matplotlib, Natural Language Toolkit (nltk)
 
 ## Data Cleaning
 To quantify the responses, which is a qualitative data, I took the approach of tagging. Hence, I need to clean the responses so computer can identify what tag to use.
