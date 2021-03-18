@@ -28,10 +28,24 @@ The responses were categorised with 7 tags:
  6. Medical
  7. Others/Unsure
  
- Each tag had a list of keywords. If a response contained a keyword from the list, it will be tagged. If a response does not contain any keywords, it is tagged as "Others/Unsure".
+ Each tag had a list of keywords. If a response contained a keyword from the list, it will be tagged. If a response does not contain any keywords, the original response in returned.
 
 | Cleaned Response                      | Tag Assigned       |
 |---------------------------------------|--------------------|
 | ['finance', 'accounting', 'business'] | Business & Finance |
 | ['data', 'scientist']                 | Technology         |
 | ['medicine']                          | Medical            |
+
+The same approach is used to tag students with which school they want to enter.
+
+## Storing the data
+
+Data is stored in an excel spreadsheet. The columns are student identifier, tagged industry, pathway chosen, school and course.
+
+**Example:**
+| Student | Industry         | Pathway     | School              | Course              |
+|---------|------------------|-------------|---------------------|---------------------|
+| John    | Medical          | JC          | Anglo-Chinese JC    |                     |
+| May     | Business&Finance | Polytechnic | Nanyang Polytechnic | Business Management |
+
+## EDA
