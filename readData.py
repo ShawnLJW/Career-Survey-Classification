@@ -1,13 +1,12 @@
-import os
 import pandas as pd
 from collections import Counter
-from nlpEngine import findKeywords
+from nlpEngine import findKeywords 
 
 keywords = {
-    'engineering': ['engineering','engineer','maritime','aerospace','electronic','electronics','robotics','robotic','mechatronics'],
+    'engineering': ['engineering','engineer','maritime','aerospace','electronic','electronics','robotics','robotic','mechatronics','architecture','urban'],
     'technology': ['technology','cyber','cybersecurity','data','compute','infocomm','ict','program','coding','computer'],
     'business': ['business','finance','financial','banking','accountant','accountancy','accounting','marketing','economics'],
-    'art': ['art','music','media','design','designer','game','video','film','performing','performance','perform','fashion','dance','entertainment'],
+    'art': ['art','music','media','design','designer','game','video','film','performing','performance','perform','fashion','dance','entertainment','write','writing'],
     'science': ['science','scientific','lab','scientist','physic','physics','research','chemical','chemistry','chemist','stem'],
     'medical': ['medicine','medical','med','pharmaceutical','hospital','healthcare','health','bio','biopharmaceuticals','biology','biomedical','biotechnology','biochemistry','doctor','nursing','nurse','veterinary','optometry','dentistry','psychology','psychological','psychologist'],
     'NP': ['ngee','ann','ngeeann','np'],
