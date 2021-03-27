@@ -19,22 +19,25 @@ def removePunc(i):
     return i
 
 def findKeywords(i):
-    i = removePunc(i)
-    i = word_tokenize(i)
-    i = pos_tag(i)
-    kw = []
-    for word,tag in i:
-        word = word.lower()
-        if word[:3] == 'las':
-            word = 'lasalle'
-        if word not in no_spell_check and len(word)>4:
-            word = spell(word)
-        if word == 'IT':
-            kw.append('technology')
-        if word == 'tech':
-            kw.append('technology')
-        elif word == 'media':
-            kw.append('media')
-        elif word not in cStopwords:
-            kw.append(lem.lemmatize(word, pos=tag[0].lower() if tag[0].lower() in 'arnv' else 'n'))
-    return kw
+    try:
+        i = removePunc(i)
+        i = word_tokenize(i)
+        i = pos_tag(i)
+        kw = []
+        for word,tag in i:
+            if word == 'IT':
+                kw.append('technology')
+            word = word.lower()
+            if word[:3] == 'las':
+                word = 'lasalle'
+            if word not in no_spell_check and len(word)>4:
+                word = spell(word)
+            if word == 'tech':
+                kw.append('technology')
+            elif word == 'media':
+                kw.append('media')
+            elif word not in cStopwords:
+                kw.append(lem.lemmatize(word, pos=tag[0].lower() if tag[0].lower() in 'arnv' else 'n'))
+        return kw
+    except TypeError:
+        return []
