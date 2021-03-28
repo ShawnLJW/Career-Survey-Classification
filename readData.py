@@ -65,7 +65,7 @@ def matchJC(kWords):
     if compareKeywords(kWords,keywords['ACJC']):
         return 'Anglo-Chinese JC'
     elif compareKeywords(kWords,keywords['ASRJC']):
-        return 'Anderson Serangonn JC'
+        return 'Anderson Serangoon JC'
     elif compareKeywords(kWords,keywords['CJC']):
         return 'Catholic JC'
     elif compareKeywords(kWords,keywords['DHS']):
