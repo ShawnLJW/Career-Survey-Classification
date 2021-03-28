@@ -6,7 +6,7 @@ from nltk.stem import WordNetLemmatizer
 import re
 
 newWords = ['youre','u','ur','really','sector','industry','be','being','related','else','xd','probably','work','something','sure','yet','interested','either']
-no_spell_check = ['raffle','raffles','eunoia','lasalle','chong']
+no_spell_check = ['raffle','raffles','eunoia','lasalle','chong','asrjc']
 cStopwords = stopwords.words('english')
 cStopwords += newWords
 lem = WordNetLemmatizer()
