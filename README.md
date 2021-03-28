@@ -1,13 +1,13 @@
 
-#  Free-response Survey Processing
+#  Survey Response Processing
 
-  
 
-- Processed responses from open-ended survey questions to find out where students aspire to progress to for post-secondary education.
 
-- Used natural language processing to clean responses and tag with categories.
+- Processed 1104 responses from a survey to find out where students aspire to progress to for post-secondary education.
 
-- Allowed for analysis on a large scale. **1000+ responses over 4 years**
+- Classified responses of students with an accuracy of 99% by building a machine learning (Bag of Words) model.
+
+- Allowed for easy analysis of students' education and career goals on a large scale.
 
   
 
@@ -103,3 +103,26 @@ Details in EDA.ipynb. Some highlights:
 ![Pie chart](https://raw.githubusercontent.com/cereal-is-a-soup/Open-ended-Response-Processing/main/Visualisation/Industry_NALevel2020.png)
 ![Box plot](https://github.com/cereal-is-a-soup/Open-ended-Response-Processing/blob/main/Visualisation/Industry_OLevelBox.png?raw=true)
 ![Stacked bar chart 100%](https://github.com/cereal-is-a-soup/Open-ended-Response-Processing/blob/main/Visualisation/Industry_OLevelTrend.png?raw=true)
+
+
+
+## Model Building
+
+
+
+I will categorise the responses with a Bag of Words (BoW) approach. The response will be vectorised to be converted into numerical data, which can be fed into a classfication model.
+
+I tried out 2 models:
+
+- Naive Bayes
+
+- Random Forest
+
+The models are evaluated with an accuracy score. The random forest model performed the best hence it will be used.
+
+
+
+### Deployment of model
+
+
+I built a flask front-end so that others can try to use the model.
