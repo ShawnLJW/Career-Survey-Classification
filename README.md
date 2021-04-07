@@ -5,7 +5,7 @@
 
 - Processed 1104 responses from a survey to find out where students aspire to progress to for post-secondary education.
 
-- Classified responses of students with an accuracy of 99% by building a machine learning (Bag of Words) model.
+- Classified responses of students with an accuracy of 98% by building a machine learning (Bag of Words) model.
 
 - Allowed for easy analysis of students' education and career goals on a large scale.
 
@@ -125,4 +125,4 @@ The models are evaluated with an accuracy score. The random forest model perform
 ### Deployment of model
 
 
-I built a flask front-end so that others can try to use the model.
+I built a front-end using streamlit so that others can try to use the model.
