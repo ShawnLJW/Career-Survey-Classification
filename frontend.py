@@ -1,6 +1,6 @@
 import streamlit as st
-from nlpEngine import find_root_words
 from joblib import load
+from nlpEngine import find_root_words
 
 industry_vectorizer = load('industry_vectorizer.sav')
 industry_classifier = load('industry_classifier.sav')
