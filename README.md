@@ -17,7 +17,7 @@
 
 **Programming Language:** Python 3.9
 
-**Packages:** numpy, pandas, matplotlib, Natural Language Toolkit (nltk)
+**Packages:** numpy, pandas, matplotlib, Natural Language Toolkit (nltk), scikit-learn
 
  ## About original data
 
