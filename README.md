@@ -125,4 +125,4 @@ The models are evaluated with an accuracy score. The random forest model perform
 ### Deployment of model
 
 
-I built a front-end using streamlit so that others can try to use the model.
+I built a [front-end](https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py) using streamlit so that others can try to use the model.
