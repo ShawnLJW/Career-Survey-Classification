@@ -30,6 +30,7 @@ The text will be processed to make things simpler.
 | 2 | Remove punctuation | Either finance accounting or business | Im considering NP |
 | 3 | Tokenize | ['Either', 'finance', 'accounting', 'or', 'business']| ['Im', 'considering', 'NP'] |
 | 4 | Remove stop words | ['finance', 'accounting', 'business'] | ['considering', 'NP'] |
+
 When necessary, spelling errors are corrected and words will be lemmatized to their base form.
 
 ## Manual classification
