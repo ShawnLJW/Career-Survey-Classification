@@ -23,6 +23,7 @@ The survey was hosted on google forms, the data is downloaded as an excel spread
 
 ## Text processing
 Text processing code is in nlpEngine.py
+
 The text will be processed to make things simpler.
 | Step | What was done | Example 1 | Example 2 |
 |-|-|-|-|
@@ -35,6 +36,7 @@ When necessary, spelling errors are corrected and words will be lemmatized to th
 
 ## Manual classification
 Code in readData.py
+
 I couldn't train the model yet, as the dataset did not come with proper tags.
 
 I started by manually coding rules to tag responses by. I wrote lists of keywords for each possible tag. If a response contains words that are in the list, it will be tagged in that category.
