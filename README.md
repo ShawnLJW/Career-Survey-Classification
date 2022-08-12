@@ -1,5 +1,4 @@
-# Natural Language Survey Processing
-### Project at a glance
+# Education & Career Guidance Survey Classification
  - Helped improve career guidance curriculum by building a tool to classify text data from survey on post-secondary pathways.
  - Processed 1104 students' responses by cleaning them and calculating their TF-IDF.
  - Trained and optimised a random forest model with 98% accuracy.
